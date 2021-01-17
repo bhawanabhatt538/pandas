@@ -48,6 +48,7 @@ plt.show()
 
 # create a list of prices
 chipo.item_price = [float(value[1:-1]) for value in chipo.item_price] # strip the dollar sign and trailing space
+print(float(value[1:-1]))
 
 # then groupby the orders and sum
 orders = chipo.groupby('order_id').sum()
